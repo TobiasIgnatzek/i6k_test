@@ -2,16 +2,266 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>just some stuff</title>
   <meta name="description" content="just some stuff">
   <meta name="author" content="i6k">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14" defer></script>
+  <script> src="app.js" defer</script>
 </head>
 <body>
-  <h1>Hello World</h1>
+<header><!-- -->
+  <div class="flex">
+    <div>
+      <img src="img/i6k.svg">
+      </img>
+    </div>
+    <div>
+      <div><link href="#offer">what i do
+      </link></div>
+      <div><link href="#projects">projects
+      </link></div>
+      <div><link href="#about">about me
+      </link></div>
+      <div><link href="#contact">contact
+      </link></div>
+    </div>
+  </div>
+</header>
+<main>
+<div>
+  <section>
+    <div>
+      <div>
+        <div>
+            <p>Hi, I am Tobi.
+            </p>
+            <h1>I build things on the internet<br>
+              – for you
+              <span>
+                🚀<!--rocket icon-->
+              </span>.
+            </h1>
+        </div>
+        <div>
+          <button>
+            <span>Learn more
+            </span>
+          </button>
+        </div>
+        <div>
+        <p>Scroll down to find out more.
+        </p>
+        </div>
+      </div>
+      <div>
+        <div class="img-hold">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h2>what I do</h2>
+    </div>
+    <div class="flex">
+      <div class="third-wrapper">
+        <div>
+          <h3>Design.
+          </h3>
+        </div>
+        <div>
+          <p>Conceptualisation to meet design standards and what you fancy.
+          </p>
+        </div>
+      </div>
+      <div class="third-wrapper">
+        <div>
+          <h3>Development.
+          </h3>
+        </div>
+        <div>
+          <p>Coding and hosting of your website, webshop or product page.
+          </p>
+        </div>
+      </div>
+      <div class="third-wrapper">
+        <div>
+          <h3>Maintenance.
+          </h3>
+        </div>
+        <div>
+          <p>Uptime, security and content maintenance to keep your web visibility.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h2>projects</h2>
+    </div>
+    <div class="flex">
+      <div>
+        <h4>Ingenieurbüro Ignatzek</h4>
+        <p>Creation of a company website for a small architectural firm.
+        </p>
+      </div>
+      <div><!-- bigger portion div-->
+          <div><!-- align link to bottom-->
+            <link>
+              <p>visit website
+              </p>
+            </link>
+          </div>
+          <div>
+            <img src="img/ignatzek.png">
+            </img>
+          </div>
+      </div>
+    </div>
+    <div class="flex inverse">
+      <div>
+        <h4>Divinity Foundation</h4>
+        <p>Design and development of a website for a charity to post news and receive donations.
+        </p>
+      </div>
+      <div><!-- bigger portion div-->
+          <div><!-- align link to bottom-->
+            <link>
+              <p>visit website
+              </p>
+            </link>
+          </div>
+          <div>
+            <img src="img/divinity.png">
+            </img>
+          </div>
+      </div>
+    </div>
+    <div class="flex">
+      <div>
+        <h4>Joana Lehner</h4>
+        <p>Creation of a website for an independent journalist to publish a blog and work portfolio.
+        </p>
+      </div>
+      <div><!-- bigger portion div-->
+          <div><!-- align link to bottom-->
+            <link>
+              <p>visit website
+              </p>
+            </link>
+          </div>
+          <div>
+            <img src="img/jlehner.png">
+            </img>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h2>about me</h2>
+    </div>
+    <div class="flex">
+      <div>
+        <h4>Experience
+        </h4>
+        <p>Besides building my own and client’s websites, I have been working as a product manager at a venture building company. Also, I did a lot of design studies and prototypes during my Master’s at a leading university.
+        </p>
+      </div>
+      <div>
+        <h4>Tool stack
+        </h4>
+        <div class="flex">
+          <img src="img/figma.svg"></img>
+          <img src="img/webflow.svg"></img>
+          <img src="img/airtable.svg"></img>
+          <img src="img/adobecc.svg"></img>
+          <img src="img/typeform.svg"></img>
+          <img src="img/css3.svg"></img>
+          <img src="img/html5.svg"></img>
+          <img src="img/vuejs.svg"></img>
+          <img src="img/nodejs.svg"></img>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <div>
+        <h4>Songs for working.
+        </h4>
+        <p>A collection of what I like to listen to during work.
+        </p>
+      </div>
+      <div>
+        <!-- spotify embed-->
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h2>contact</h2>
+    </div>
+    <div class="flex">
+      <div>
+        <h4>
+          Want to work with me?
+        </h4>
+        <p>I’m happy to hear from you. Simply shoot me an email using the form below.
+        </p>
+        <div id="app">
+          <form>
+            <textarea placeholder="Your message">
+            </textarea>
+            <div>
+              <email placeholder="Your email"></email>
+              <button><span>Submit</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h4>
+          ..or connect on socials?
+        </h4>
+        <p>Just add and ping me. I am always up for a chat.
+        </p>
+        <div>
+          <div>
+            <div><!--render as inline element -->
+              <img src="img/linkedin.svg">
+              </img>
+            </div>
+            <link><p>LinkedIn</p><link>
+          </div>
+          <div>
+            <div><!--render as inline element -->
+              <img src="img/github.svg">
+              </img>
+            </div>
+            <link><p>GitHub</p><link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="flex">
+    <div>
+      <div>
+        <link><p>Imprint</p>
+        </link>
+        <link><p>Data protection</p>
+        </link>
+      </div>
+    <div><p>Made in Berlin. 2021.
+    </p>
+    </div>
+</footer>
 </body>
 </html>
