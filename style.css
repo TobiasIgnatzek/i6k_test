@@ -5,10 +5,93 @@ body {
   background-color: #F5F5F4;
 }
 
-h1 {
-  font-size: 30px;
-  font-weight: bold;
+@font-face {
+font-family: 'Jost';
+src: url('fonts/Jost-SemiBold.ttf');
+font-weight: 600;
+}
+
+@font-face {
+font-family: 'Jost';
+src: url('fonts/Jost-Medium.ttf');
+font-weight: 500;
+}
+
+@font-face {
+font-family: 'Jost';
+src: url('fonts/Jost-Regular.ttf');
+font-weight: 400;
+}
+
+h1, h3 {
+  font-size: 35px;
+  font-family: 'Jost';
+  font-weight: 600;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  color: '#666666';
+}
+
+h2 {
+  font-size: 47px;
+  font-family: 'Jost';
+  font-weight: 600;
+  line-height: 67px;
+  margin: 0;
+  padding: 0;
+  color: '#666666';
+}
+
+.heading {
+  font-size: 35px;
+  font-family: 'Jost';
+  font-weight: 600;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.headlink {
+  font-family: 'Jost';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+main {
+  max-width: 1260px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wwrapper {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.linkbox {
+  padding: 33px;
+}
+
+.end {
+  padding-right: 0;
+  margin-right: 0;
 }
