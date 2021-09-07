@@ -23,14 +23,14 @@ src: url('fonts/Jost-Regular.ttf');
 font-weight: 400;
 }
 
-h1, h3 {
+h1, h3, h4 {
   font-size: 35px;
   font-family: 'Jost';
   font-weight: 600;
   line-height: 50px;
   margin: 0;
   padding: 0;
-  color: '#666666';
+  color: #666666;
 }
 
 h2 {
@@ -40,7 +40,20 @@ h2 {
   line-height: 67px;
   margin: 0;
   padding: 0;
-  color: '#666666';
+  color: #666666;
+}
+
+p {
+  font-family: 'Jost';
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.red {
+  color: #FF9E89;
 }
 
 .heading {
