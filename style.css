@@ -135,6 +135,9 @@ section {
   margin-bottom: 90px;
 }
 
+.logo {
+  line-height: 95px;
+}
 
 .flex {
   display: flex;
