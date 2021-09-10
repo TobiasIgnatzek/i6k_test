@@ -35,6 +35,11 @@ h1, h3, h4 {
   color: #666666;
 }
 
+h4 {
+  line-height: 40px;
+  margin-bottom: 5px;
+}
+
 h2 {
   font-size: 47px;
   font-family: 'Jost';
@@ -94,7 +99,24 @@ textarea {
   text-align: left;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: #666666;
 }
+
+a {
+  font-family: 'Jost';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #666666;
+}
+
 
 .small {
   font-family: 'Jost';
@@ -142,6 +164,7 @@ section {
 
 .flex {
   display: flex;
+  gap: 40px;
   justify-content: space-between;
 }
 
@@ -152,7 +175,15 @@ section {
 }
 
 .flex-wrap {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.vert-flex-spacer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .wwrapper {
@@ -161,13 +192,13 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-.third-wrapper {
+.pad-med {
   padding: 32px;
-  margin-right: 40px;
 }
 
 .linkbox {
-  padding: 33px;
+  padding-top: 33px;
+  padding-bottom: 33px;
   cursor: pointer;
 }
 
@@ -217,18 +248,11 @@ section {
   justify-content: space-between;
   overflow: hidden;
   margin-bottom: 40px;
-  margin-top: 40px;
   width: 70%;
-}
-
-.txtpanel {
-  margin-right: 40px;
-  padding: 32px;
 }
 
 .smtxt {
   max-width: 332px;
-  padding: 32px;
 }
 
 .tool {
@@ -239,16 +263,12 @@ section {
 
 .smportion {
   max-width: 332px;
-  padding: 32px;
-  margin-right: 40px;
   margin-bottom: 40px;
-  margin-top: 40px;
 }
 
 .half {
-  width: 50%;
-  margin-right: 40px;
   padding: 32px;
+  width: 50%;
 }
 
 .embed {
@@ -260,14 +280,9 @@ section {
 .forembed {
   overflow: hidden;
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
   background-color: #000;
   min-height: 250px;
-}
-
-.endpan {
-  margin-right: 0;
+  margin-top: 40px;
 }
 
 .bottom {
@@ -333,12 +348,11 @@ section {
   padding: 0;
 }
 
-.end {
-  padding-right: 0;
-  margin-right: 0;
+.ng {
+  column-gap: 0;
+  row-gap: 0;
 }
 
-.start {
-  padding-left: 0;
-  margin-left: 0;
+.mtop {
+  margin-top: 40px;
 }

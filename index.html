@@ -10,24 +10,24 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14" defer></script>
-  <script> src="app.js" defer</script>
+  <script src="app.js" defer></script>
 </head>
 <body>
 <header>
   <div class="flex">
-    <div>
-      <img class="logo" src="img/I6K.svg">
-      </img>
+    <div><a href="https://i6k.co">
+      <img class="logo" src="img/I6K.svg"></a>
+    </img>
     </div>
     <div class="flex">
-      <div class="headlink linkbox"><link href="#offer">what i do
-      </link></div>
-      <div class="headlink linkbox"><href="#projects">projects
-      </link></div>
-      <div class="headlink linkbox"><href="#about">about me
-      </link></div>
-      <div class="headlink linkbox end"><href="#contact">contact
-      </link></div>
+      <div class="headlink linkbox"><a href="#offer">what i do
+      </a></div>
+      <div class="headlink linkbox"><a href="#projects">projects
+      </a></div>
+      <div class="headlink linkbox"><a href="#about">about me
+      </a></div>
+      <div class="headlink linkbox end"><a href="#contact">contact
+      </a></div>
     </div>
 </div>
 </header>
@@ -42,12 +42,12 @@
             <h1>I build things on the internet<br>
               – for you
               <span>
-                🚀<!--rocket icon-->
+                🚀
               </span>.
             </h1>
         </div>
         <div>
-          <button>
+          <button onclick="window.location.href='#offer'">
             <span>Learn more
             </span>
           </button>
@@ -64,11 +64,11 @@
     </div>
   </section>
   <section>
-    <div>
+    <div id="offer">
       <h2>what I do</h2>
     </div>
     <div class="flex">
-      <div class="third-wrapper wwrapper">
+      <div class="pad-med wwrapper">
         <div>
           <h3 class="red"><span>Design.</span>
           </h3>
@@ -78,7 +78,7 @@
           </p>
         </div>
       </div>
-      <div class="third-wrapper wwrapper">
+      <div class="pad-med wwrapper">
         <div>
           <h3><span class="red">Development.</span>
           </h3>
@@ -88,7 +88,7 @@
           </p>
         </div>
       </div>
-      <div class="third-wrapper wwrapper end">
+      <div class="pad-med wwrapper end">
         <div>
           <h3> <span class="red">Maintenance.</span>
           </h3>
@@ -100,22 +100,22 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="projects">
     <div>
       <h2>projects</h2>
     </div>
     <div class="flex">
-      <div class="wwrapper smportion">
-        <h4>Ingenieurbüro Ignatzek</h4>
+      <div class="wwrapper smportion pad-med">
+        <h4>IB Ignatzek</h4>
         <p>Creation of a company website for a small architectural firm.
         </p>
       </div>
       <div class="flex wwrapper imgpanel"><!-- bigger portion div-->
           <div class="bottom">
-            <link>
+            <a href="http://ibignatzek.de" target="_blank">
               <p class="grey">visit website
               </p>
-            </link>
+            </a>
           </div>
           <div class="vert-flex-center">
             <img class="imgmaxsize" src="img/ignatzek.png">
@@ -124,36 +124,36 @@
       </div>
     </div>
     <div class="flex inverse">
-      <div class="wwrapper smportion endpan">
+      <div class="wwrapper smportion pad-med">
         <h4>Divinity Foundation</h4>
         <p>Design and development of a website for a charity to post news and receive donations.
         </p>
       </div>
-      <div class="flex wwrapper imgpanel" style="margin-right: 40px;"><!-- bigger portion div-->
+      <div class="flex wwrapper imgpanel"><!-- bigger portion div-->
           <div class="vert-flex-center">
             <img class="imgmaxsize inv-border" src="img/divinity.png">
             </img>
           </div>
           <div class="bottom">
-            <link>
+            <a href="https://www.divinityfoundation.com" target="_blank">
               <p class="grey">visit website
               </p>
-            </link>
+            </a>
           </div>
       </div>
     </div>
     <div class="flex">
-      <div class="wwrapper smportion">
+      <div class="wwrapper smportion pad-med">
         <h4>Joana Lehner</h4>
         <p>Creation of a website for an independent journalist to publish a blog and work portfolio.
         </p>
       </div>
       <div class="flex wwrapper imgpanel">
           <div class="bottom">
-            <link>
+            <a href="" target="_blank">
               <p class="grey">visit website
               </p>
-            </link>
+            </a>
           </div>
           <div class="vert-flex-center">
             <img class="imgmaxsize" src="img/jlehner.png">
@@ -162,29 +162,29 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="about">
     <div>
       <h2>about me</h2>
     </div>
     <div class="flex">
-      <div class="wwrapper txtpanel">
+      <div class="wwrapper pad-med">
           <h4>Experience
         </h4>
         <p>Besides building my own and client’s websites, I have been working as a product manager at a venture building company. Also, I did a lot of design studies and prototypes during my Master’s at a leading university.
         </p>
       </div>
-      <div class="wwrapper smtxt">
+      <div class="wwrapper smtxt pad-med">
         <h4>Tool stack
         </h4>
-        <div class="flex flex-wrap">
-          <div class="flex">
+        <div class="flex flex-wrap ng">
+          <div class="flex ng">
           <img class="tool" src="img/figma.svg"></img>
           <img class="tool" src="img/webflow.svg"></img>
           <img class="tool" src="img/airtable.svg"></img>
           <img class="tool" src="img/adobecc.svg"></img>
           <img class="tool" src="img/typeform.svg"></img>
         </div>
-        <div class="flex">
+        <div class="flex ng">
           <img class="tool" src="img/css3.svg"></img>
           <img class="tool" src="img/html5.svg"></img>
           <img class="tool" src="img/vuejs.svg"></img>
@@ -194,19 +194,19 @@
       </div>
     </div>
     <div class="flex">
-      <div class="wwrapper smportion">
+      <div class="wwrapper mtop pad-med">
         <h4>Songs for working.
         </h4>
         <p>A collection of what I like to listen to during work.
         </p>
       </div>
-      <div class="wwrapper forembed endpan">
+      <div class="wwrapper forembed">
         <iframe src="https://open.spotify.com/embed/playlist/0iC7h1PygUVn5qBN5LxaOz" defer theme="0" class="embed" frameBorder="0" allowtransparency="true" allow="encrypted-media">
         </iframe>
       </div>
     </div>
-  </section>
-  <section>
+</section>
+  <section id="contact">
     <div>
       <h2>contact</h2>
     </div>
@@ -228,7 +228,7 @@
           </form>
         </div>
       </div>
-      <div class="wwrapper half endpan">
+      <div class="wwrapper half">
         <h4>
           ..or connect on socials?
         </h4>
@@ -240,14 +240,14 @@
               <img src="img/linkedin.svg">
               </img>
             </div>
-            <link><p class="nm vert-flex">LinkedIn</p><link>
+            <p class="nm vert-flex">LinkedIn</p>
           </div>
           <div class="input-wrapper-2">
             <div class="nm vert-flex"><!--render as inline element -->
               <img src="img/github.svg">
               </img>
             </div>
-            <link><p class="nm vert-flex">GitHub</p><link>
+            <p class="nm vert-flex">GitHub</p>
           </div>
         </div>
       </div>
@@ -255,17 +255,15 @@
   </section>
 </main>
 <footer>
-  <div>
     <div class="flex">
       <div class="flex">
-        <link><div class="linkbox"><p class="small grey">Imprint</p></div>
-        </link>
-        <link><div class="linkbox"><p class="small grey">Data protection</p>
-        </link></div>
+        <div class="linkbox"><p class="small grey">Imprint</p></div>
+        <div class="linkbox"><p class="small grey">Data protection</p>
+        </div>
       </div>
     <div class="linkbox"><p class="small grey">Made in Berlin. 2021.
     </p>
     </div>
-</footer>
+  </div>
 </body>
 </html>
